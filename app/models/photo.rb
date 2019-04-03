@@ -1,5 +1,5 @@
 class Photo < ApplicationRecord
       belongs_to :place
       has_one :photo
-
-end
+      mount_uploader :photo, ImageUploader
+      end

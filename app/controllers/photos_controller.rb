@@ -5,7 +5,8 @@ def create
     @place.photos.create(photo_params.merge(user: current_user))
     redirect_to place_path(@place)
 
-    def comment_params
+    def photo_params
     params.require(:photo).permit(:message, :rating)
+  
   end
 end
