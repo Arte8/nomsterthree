@@ -1,5 +1,5 @@
 class PictureUploader < CarrierWave::Uploader::Base
-  storage :file
+  storage :fog
   # uploader = PictureUploader.new
 
 # uploader.store!(my_file)
@@ -7,7 +7,7 @@ class PictureUploader < CarrierWave::Uploader::Base
 # uploader.retrieve_from_store!('my_file.png')
 # end
 # end
-def store_dir
+  def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
