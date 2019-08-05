@@ -1,13 +1,4 @@
-<% @places.each do |place| %>
-  <div class="booyah-box col-10 offset-1">
-    <h1><%= link_to place.name, place_path(place) %></h1><br />
-    <i><%= place.address %></i><br /><br />
-    <p><%= place.description %></p><br />
-
-  <% if place.user.present? %>
-      <small><%= place.user.email %></small>
-  <% end %>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -43,6 +34,16 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+<% @places.each do |place| %>
+  <div class="booyah-box col-10 offset-1">
+    <h1><%= link_to place.name, place_path(place) %></h1><br />
+    <i><%= place.address %></i><br /><br />
+    <p><%= place.description %></p><br />
+
+  <% if place.user.present? %>
+      <small><%= place.user.email %></small>
+  <% end %>
 
 <% if place.comments.present? %>
   <div class="col-12">
