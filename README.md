@@ -4,7 +4,7 @@ A geolocated map and directory of street murals and street art. Subscribers have
 
 Coded in: HTML, CSS, RUBY, RUBY on RAILS.
 
-Visit the app at:
+Visit the app at: http://nomster-three-art.herokuapp.com/
 
 FEATURES
 
