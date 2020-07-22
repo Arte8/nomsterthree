@@ -20,3 +20,5 @@ Visit the app at: http://nomster-three-art.herokuapp.com/
 
 All in all a fun app for art lovers, urban culture enthusiasts and those curious about street art, but in essence…….its for everyone!
 
+(due to the nature of the medium, as of deployment, photo function has been disabled to protect the artists involved)
+
